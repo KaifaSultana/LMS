@@ -193,8 +193,8 @@ public class  BookOperations{
 		// Displaying menu for Librarian 
 		System.out.println(
 			"----------------------------------------------------------------------------------------------------------");
-		System.out.println("Press 1 to Add new Book.");
 		System.out.println("Press 0 to Exit Application.");
+		System.out.println("Press 1 to Add new Book.");
 		System.out.println(
 			"Press 2 to Upgrade Quantity of a Book.");
 		System.out.println("Press 3 to Search a Book.");
