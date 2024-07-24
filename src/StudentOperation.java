@@ -4,12 +4,14 @@
 // add Students,check-in books,check out books,ValidStudent
 
 // Importing required classes
+import java.util.Random;
 import java.util.Scanner;
 
 // Class
 public class StudentOperation {
 
 	// Creating objects of Scanner and students class
+	
 	Scanner input = new Scanner(System.in);
 	User theStudents[] = new User[50];
 	Book borrowedBooks[] = new Book[3];
@@ -67,10 +69,23 @@ public class StudentOperation {
 					return;
 				}
 			}
+			// Ensure the new student has a unique ID
+			while (isIDTaken(s.id)) {
+				s.id = s.generateRandomID();
+			}
 			if (count <= 50) {
 				theStudents[count] = s;
 				count++;
 			}
+		}
+		// Method to check if a given ID is already taken
+		private boolean isIDTaken(String id) {
+			for (int i = 0; i < count; i++) {
+				if (theStudents[i].id.equals(id)) {
+					return true;
+				}
+			}
+			return false;
 		}
 	// 	public void checkInBook(BookOperations book)
 	// {

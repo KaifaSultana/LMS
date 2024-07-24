@@ -4,6 +4,7 @@
 // to take Input from the student and related Information
 
 // Importing required classes
+import java.util.Random;
 import java.util.Scanner;
 
 // Class
@@ -14,7 +15,7 @@ public class User {
 	String Password;
 	String mobileNumber;
 	String emailId;
-
+	String id;
 	Book borrowedBooks[] = new Book[3];
 	public int booksCount = 0;
 
@@ -37,7 +38,15 @@ public class User {
 		// Print statement
 		System.out.println("Enter Password:");
 		this.Password = input.nextLine();
+		this.id = generateRandomID();
+		System.out.println("Generated ID: " + this.id); // Display the generated ID
 	}
+	// Method to generate a 2-digit numerical ID
+    public String generateRandomID() {
+        Random random = new Random();
+        int randomID = random.nextInt(90) + 10; // Generates a number between 10 and 99
+        return String.valueOf(randomID);
+    }
 }
 
 

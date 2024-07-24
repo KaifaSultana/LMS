@@ -38,23 +38,6 @@ public class LibrarianOperation extends StudentOperation{
 		}
 	}
 
-	// Method 2
-	// Displaying all students
-	public void showAllStudents()
-	{
-		// Printing student name and
-		// corresponding registered number
-		System.out.println("Student Name\t\tReg Number");
-		for (int i = 0; i < count; i++) {
-
-			System.out.println(theStudents[i].Name
-							+ "\t\t"
-							+ theStudents[i].emailId
-                            + "\t\t"
-							+ theStudents[i].mobileNumber);
-		}
-	}
-
 	// Method 3
 	// To check the Student
 	
@@ -92,26 +75,7 @@ public class LibrarianOperation extends StudentOperation{
 		return -1;
 	}
 
-	// {
-	// 	// Display message only
-	// 	System.out.println("Enter Librarian Name:");
-
-	// 	String Name = input.nextLine();
-
-	// 	for (int i = 0; i < count; i++) {
-
-	// 		if (theLibrarian[i].Name.equalsIgnoreCase(Name)) {
-	// 			return i;
-	// 		}
-	// 	}
-
-	// 	// Print statements
-	// 	System.out.println("Librarian is not Registered.");
-	// 	System.out.println("Get Registered First.");
-
-	// 	return -1;
-	// }
-
+	
 
 }
 

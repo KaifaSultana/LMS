@@ -78,7 +78,7 @@ public class Library {
 								case 2:
 									ob.searchByAuthorName();
 									break;
-								}
+								}break;
 								
 				
 								// Case
@@ -165,25 +165,18 @@ public class Library {
 				
 								// Case
 							// case 6:
-							// 	obStudent.showAllStudents();
+							// 	obLibrary.showAllStudents(s);
 							// 	break;
 				
 								// Case for book borrowing
-							case 7:
-								ob.checkOutBook();
-								break;
-				
-								// Case for book return
-							case 8:
-								ob.checkInBook();
-								break;
+							
 				
 								// Default case that will execute for sure
 								// if above cases does not match
 							default:
 				
 								// Print statement
-								System.out.println("ENTER BETWEEN 0 TO 8.");
+								System.out.println("ENTER BETWEEN 0 TO 5.");
 							}
 							
 					}

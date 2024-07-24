@@ -182,8 +182,8 @@ public class  BookOperations{
 		// System.out.println("Press 5 to Register Student.");
 		// System.out.println(
 		// 	"Press 6 to Show All Registered Students.");
-		System.out.println("Press 3 to Check Out Book. ");
-		System.out.println("Press 4 to Check In Book");
+		System.out.println("Press 3 to Borrow Book. ");
+		System.out.println("Press 4 to Return Book");
 		System.out.println(
 			"-------------------------------------------------------------------------------------------------------");
 	}
@@ -200,10 +200,10 @@ public class  BookOperations{
 		System.out.println("Press 3 to Search a Book.");
 		System.out.println("Press 4 to Show All Books.");
 		System.out.println("Press 5 to Register Student.");
-		System.out.println(
-			"Press 6 to Show All Registered Students.");
-		System.out.println("Press 7 to Check Out Book. ");
-		System.out.println("Press 8 to Check In Book");
+		// System.out.println(
+		// 	"Press 6 to Show All Registered Students.");
+		// System.out.println("Press 7 to Check Out Book. ");
+		// System.out.println("Press 8 to Check In Book");
 		System.out.println(
 			"-------------------------------------------------------------------------------------------------------");
 	}
