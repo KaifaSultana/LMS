@@ -265,8 +265,9 @@ public class  BookOperations{
 		int bookIndex = isAvailable(sNo);
 
 		if (bookIndex != -1) {
-			theBooks[bookIndex].bookQtyCopy++;
 			System.out.println("Book is Returned");
+			theBooks[bookIndex].bookQtyCopy++;
+			
 			return theBooks[bookIndex];
 		}
 		

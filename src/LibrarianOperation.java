@@ -59,58 +59,58 @@ public class LibrarianOperation extends StudentOperation{
 	// To check the Student
 	
 	public int isLibrarian()
-	// {
-	// 	// Display message only
-	// 	System.out.println("Enter Student Name:");
-
-	// 	String studentName = input.nextLine();
-	// 	System.out.println("Enter Password:");
-
-	// 	String SdPassword = input.nextLine();
-
-	// 	for (int i = 0; i < count; i++) {
-
-	// 		if (theStudents[i].Name.equalsIgnoreCase(
-	// 				studentName)) {
-	// 					if (theStudents[i].Password.equals(SdPassword)) {
-	// 						// Password is valid, return the index
-	// 						return i;		
-				
-	// 		}
-	// 		else{
-    //             // Password is invalid, display a message
-    //             System.out.println("Invalid password for the student.");
-    //             return -1; // Return -1 to indicate an invalid student
-    //         }
-	// 	}
-		
-	// }
-	// 	// Print statements
-	// 	System.out.println("Student is not Registered.");
-	// 	System.out.println("Get Registered First.");
-
-	// 	return -1;
-	// }
-
 	{
 		// Display message only
 		System.out.println("Enter Librarian Name:");
 
-		String Name = input.nextLine();
+		String LbName = input.nextLine();
+		System.out.println("Enter Password:");
+
+		String LbPassword = input.nextLine();
 
 		for (int i = 0; i < count; i++) {
 
-			if (theLibrarian[i].Name.equalsIgnoreCase(Name)) {
-				return i;
+			if (theLibrarian[i].Name.equalsIgnoreCase(
+					LbName)) {
+						if (theLibrarian[i].Password.equals(LbPassword)) {
+							// Password is valid, return the index
+							return i;		
+				
 			}
+			else{
+                // Password is invalid, display a message
+                System.out.println("Invalid password for the Librarian.");
+                return -1; // Return -1 to indicate an invalid the Librarian
+            }
 		}
-
+		
+	}
 		// Print statements
 		System.out.println("Librarian is not Registered.");
 		System.out.println("Get Registered First.");
 
 		return -1;
 	}
+
+	// {
+	// 	// Display message only
+	// 	System.out.println("Enter Librarian Name:");
+
+	// 	String Name = input.nextLine();
+
+	// 	for (int i = 0; i < count; i++) {
+
+	// 		if (theLibrarian[i].Name.equalsIgnoreCase(Name)) {
+	// 			return i;
+	// 		}
+	// 	}
+
+	// 	// Print statements
+	// 	System.out.println("Librarian is not Registered.");
+	// 	System.out.println("Get Registered First.");
+
+	// 	return -1;
+	// }
 
 
 }
